@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tetris</title>
+
+    <link rel="stylesheet" href="./dist/main.css">
+</head>
+
+<body>
+    <div class="tetris">
+        <div class="palyfield">
+            <canvas id="tetris" width="280" height="480"></canvas>
+        </div>
+        <div class="hold-next-fields">
+            <div class="hold-field">
+                <h3>On Hold</h3>
+                <canvas id="hold" width="160" height="120"></canvas>
+            </div>
+            <div class="next-field">
+                <h3>Next</h3>
+                <canvas id="next" width="160" height="120"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <div id="stats">
+
+        <div class="block">
+            <div class="number" id="level">0</div>
+            <div class="string">Level</div>
+        </div>
+
+        <div class="block">
+            <div class="number" id="rows">1</div>
+            <div class="string">Rows</div>
+        </div>
+
+        <div class="block">
+            <div class="number" id="score">1</div>
+            <div class="string">Score</div>
+        </div>
+
+        <div class="block">
+            <div class="number" id="time">1</div>
+            <div class="string">Time</div>
+        </div>
+
+    </div>
+    <script src="dist/tetris.js" type="text/javascript"></script>
+</body>
+
+</html>
